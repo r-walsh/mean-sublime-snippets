@@ -6,7 +6,7 @@ var   express = require('express')
 	, cors = require('cors')
 	, mongoose = require('mongoose')
 	, port = $1
-	, mongoUri = 'mongodb:localhost:27017/$2'
+	, mongoUri = 'mongodb:localhost:27017/$2';
 
 app.use(bodyParser.json());
 app.use(cors());
