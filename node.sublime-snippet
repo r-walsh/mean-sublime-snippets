@@ -19,7 +19,7 @@ mongoose.connection.once('open', function() {
 
 
 app.listen(port, function() {
-	console.log('Listening on ' + port)
+	console.log('Listening on ' + port);
 });
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

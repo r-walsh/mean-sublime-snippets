@@ -97,7 +97,7 @@ mongoose.connection.once('open', function() {
 
 
 app.listen(port, function() {
-	console.log('Listening on ' + port)
+	console.log('Listening on ' + port);
 });
 ```
 
