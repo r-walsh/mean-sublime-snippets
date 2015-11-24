@@ -16,7 +16,7 @@ angular.module('$1', [$2]);
 
 - `ngAppRoute`:
 ```javascript
-angular.module('$1', ['ui-router'$2])
+angular.module('$1', ['ui.router'$2])
 
 .config(function( $stateProvider, $urlRouterProvider ) {
 
