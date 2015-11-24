@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+angular.module('$1')
+.factory('$2', function() {
+	return {
+
+		$3
+
+	}
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ngFac</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

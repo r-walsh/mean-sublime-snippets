@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[
+var   express = require('express')
+	, app = express()
+	, bodyParser = require('body-parser')
+	, cors = require('cors')
+	, mongoose = require('mongoose')
+	, port = $1
+	, mongoUri = 'mongodb:localhost:27017/$2'
+
+app.use(bodyParser.json());
+app.use(cors());
+app.use(express.static(__dirname + '/public'));
+
+mongoose.connect(mongoUri);
+mongoose.connection.once('open', function() {
+	console.log('Connected to MongoDB at ' + mongoUri);
+});
+
+
+app.listen(port, function() {
+	console.log('Listening on ' + port)
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>node</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
